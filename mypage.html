@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./titlesection/titlesection.css">
+        <link rel="stylesheet" href="./aboutmesection/aboutmesection.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Armata&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif+JP:wght@200..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">        </head>
     <body>
         <div class="main-section" id="title"> 
@@ -9,7 +10,16 @@
             <p class="title-section-subtitle">exploring the core of web development</p>
         <button class="title-section-button" onclick="makedreamcometrue()">COMBINING KNOWLEDGE WITH ACTION</button>
         </div>
-      
+      <div class="misc-section" id="aboutme">
+        <div class="text-block-container">
+            <h1>About Me</h1>
+        <p class="aboutme-section-description">I am currently a Chemical Engineering student
+            at Covenant University, I love learning and trying new things
+            everyday, which is why I was soo thrilled to sign up for this cousrse,
+            so far it has been an experience of a lifetime. I also loveeeeee a good skincare
+            routine and where else to experience that but with ORIFLAME my go to brand any day any time</p>
+        </div>
+      </div>
         </body>
 </html>
 
@@ -33,7 +43,14 @@ html, body{
     padding: 25px;
 
 }
-
+.misc-section {
+    width: 100vw;
+    padding: 100px 25px;
+}
+.text-block-container {
+    width: 65%;
+    margin: 0 auto;
+}
 </style>
 <script>
     function makedreamcometrue(params) {
