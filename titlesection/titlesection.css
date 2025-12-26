@@ -1,5 +1,5 @@
 h1{
-    color: blue;
+    color: navajowhite;
 }
 button:hover{
     background-color: antiquewhite;
@@ -11,6 +11,6 @@ button:hover{
         
     text-align: center;
     padding-top: 200px;
-    background-image: url('../images/anthony-cantin-9PqSxmMXIkc-unsplash.jpg');
+    background-image: url('../images/sincerely-media-jGzXcCEBgvM-unsplash.jpg');
     background-position: center top;
 }
