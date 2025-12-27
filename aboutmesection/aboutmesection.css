@@ -3,4 +3,17 @@
 }
 .aboutme-section-description {
     text-align: justify;
+    margin-top: 40px;
+}
+.aboutme-icons {
+ font-size: 25px;
+ margin-top: 45px;
+}
+.aboutme-icon {
+    margin: 10px;
+    color: var(--titleSectionSecondarycolor);
+}
+.aboutme-icon:hover {
+    cursor: pointer;
+    color: var(--titleSectionTertiarycolor);
 }

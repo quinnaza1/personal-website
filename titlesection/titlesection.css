@@ -2,7 +2,9 @@
 :root {
   --titleSectionPrimaryColor: white;
   --titleSectionSecondarycolor: rgba(160, 122, 85);
-  
+  --titleSectionTertiarycolor: rgba(122, 118, 125)
+
+;
 }
 #title {
     color: var(--titleSectionPrimaryColor);
