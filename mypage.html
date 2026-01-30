@@ -44,7 +44,7 @@
       <div class="main-section" id="craps-game">
         <h1 class="craps-game-title">Craps Casino Game</h1>
         <div class="craps-game-container">
-            <div class="craps-registration-pane">
+            <div id="craps-registration-pane">
                 <div>
                     Enter username to begin
                 </div>
@@ -54,6 +54,9 @@
                     <div class="craps-registration-continue" onclick="registerCrapsPlayer()">
                         continue
                     </div>
+            </div>
+            <div id="craps-main-section">
+            MAIN SECTION HERE
             </div>
         
         </div>
@@ -98,15 +101,14 @@ html, body{
   }
 }
 </style>
+<script src="./crapsgame/crapsgame.js"></script>
 <script>
     function makedreamcometrue (params) {
      document.body.style.backgroundImage = 'url("https://www.icegif.com/wp-content/uploads/2023/08/icegif-788.gif")'; 
-     document.getElementById("title").style.visibility = "hidden";
+     document.getElementById("title").style.visibility = "hidden"
     }
 
-  function registerCrapsPlayer () {
-    let crapsusername = document.getElementById("craps-username-input").value
-  }         
+        
 </script>   
    
       
