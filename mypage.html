@@ -4,20 +4,21 @@
     <link rel="stylesheet" href="./titlesection/titlesection.css">
     <link rel="stylesheet" href="./aboutmesection/aboutmesection.css">
     <link rel="stylesheet" href="./crapsgame/crapsgame.css">
-    <link rel="stylesheet" href="./crapsgame/utils.css">
+    <link rel="stylesheet" href="./crapsgame/utilities.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Armata">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-    <body>
+<body>
+<body onload="getNewRandomQuote()">
         <div class="main-section" id="title"> 
             <h1 class="title-section-header">EHINMOSAN AYOMIDE AYOMIPOSI</h1> 
             <p class="title-section-subtitle">exploring the core of web development</p>
-        <button class="title-section-button" onclick="makedreamcometrue()">COMBINING KNOWLEDGE WITH ACTION</button>
+            <button class="title-section-button" onclick="makedreamcometrue()">COMBINING KNOWLEDGE WITH ACTION</button>
         </div> 
-      <div class="misc-section" id="aboutme">
-        <div class="text-block-container">
-            <h1>About Me</h1>
-        <p class="aboutme-section-description">I am currently a Chemical Engineering student
+        <div class="misc-section" id="aboutme">
+           <div class="text-block-container">
+             <h1>About Me</h1>
+             <p class="aboutme-section-description">I am currently a Chemical Engineering student
             at Covenant University, I love learning and trying new things
             everyday, which is why I was soo thrilled to sign up for this course,
             so far it has been an experience of a lifetime. I also loveeeeee a good skincare
@@ -107,9 +108,18 @@
             </div>
         </div>
     </div>
+    <div class="main-section" id="random-quote-generator">
+        <div>
+            <div>Quote: <div id="random-quote-text"></div></div>
+            <div>Author: <div id="random-quote-author"></div></div>
+            <div onclick="getNewRandomQuote()">New Quote</div>
+        </div>
+    </div>
 </body>
 </html>
+
 <style>
+    
     * {
   box-sizing: border-box;
   font-family: 'Armata';
