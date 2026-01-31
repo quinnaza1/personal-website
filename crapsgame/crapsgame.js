@@ -100,10 +100,22 @@ function registerCrapsPlayer () {
   
  }
  function rollDice () {
+  formatDiceScale()
   document.getElementById(crapsRollDiceButton).style.display = "none"
   const diceRollElement = document.getElementById(crapsRollDiceAnimationContainer)
   rollADie({ element: diceRollElement, numberOfDice: 2, callback: processDiceResult, delay: 1000000 });
  }
- function processDiceResult (diceResult) {
+
+function formatDiceScale () {
+    const vw = window.innerWidth * 0.8
+    const vh = window.innerHeight * 0.8
+    const widthScale = Math.min(700, vw, vh)
+    const heightScale = widthScale * 0.714
+    const scale = heightScale / 494.6592
+    alert(heightScale)
+    document.getElementById(crapsRollDiceButton).style.transform = "scale(" + scale + ")"
+}
+
+function processDiceResult (diceResult) {
     console.log(diceResult)
  }
