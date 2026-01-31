@@ -1,17 +1,30 @@
+:root {
+    --width-scale: min(600px, 80vw, 80vh);
+    --height-scale: calc(var(--width-scale) * 0.667);
+    --game-title-size: min(calc(var(--height-scale) * 0.1), 2em);
+    --title-margin-bottom: calc(var(--height-scale) * 0.25);
+}   
+
+
+
+
 #craps-game {
     background-image: url('../images/Vegas.jpg');
     color: white;
     background-position: center top;
+    padding: 1px;
 }
 .craps-game-title {
-text-align: center;
-margin-top: 100px;
+    font-size: var(--game-title-size);
+    text-align: center;
+    margin-top: calc(calc(100vh - var(--game-title-size) - var(--title-margin-bottom) - var(--height-scale)) / 2);
+    margin-bottom: var(--title-margin-bottom);
 }
 .craps-game-container {
-    width: min(600px, 80vw);
-    height: min(400px, 53vw);
+    width: var(--width-scale);
+    height: var(--height-scale);
     border: solid white 2px;
-    margin: 100px auto 0 auto;
+    margin: 0 auto;
     background-image: url('../images/crapstable.png');
     background-size: cover;
     background-position: center top;
@@ -19,25 +32,25 @@ margin-top: 100px;
 
 }
 #craps-registration-pane {
-    margin-top: 55px;
+    margin-top: calc(var(--height-scale) * 0.15);
+    font-size: calc(var(--game-title-size) * 0.5);
     text-align: center;
+    
 
 }
 .craps-registration-input {
     background: none;
     border: none;
     border-bottom: solid white 1px;
-    margin-top: 25px;
+    margin: calc(var(--height-scale) * 0.055) 0;
     color: white;
+    font-size: calc(var(--game-title-size) * 0.5);
     text-align: center;
 }
 
 .craps-registration-input:focus,
 .craps-registration-input:focus-visible {
     outline: none !important;
-}
-.craps-registration-continue {
-    margin-top: 25px;
 }
 .craps-registration-continue:hover {
     cursor: pointer;
@@ -48,9 +61,10 @@ margin-top: 100px;
 }
 .craps-main-section-stats {
     text-align: center;
-    margin-top: 70px;
+    font-size: calc(var(--height-scale) * 0.04);
+    margin-top: calc(var(--height-scale) * 0.15);
 }
 .craps-stats-money-container {
-    font-size: 30px;
-    margin: 25px 0 5px 0;
+    font-size: calc(var(--height-scale) * 0.085);
+    margin-top: calc(var(--height-scale) * 0.04);
 }
