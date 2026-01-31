@@ -12,7 +12,7 @@
             <h1 class="title-section-header">EHINMOSAN AYOMIDE AYOMIPOSI</h1> 
             <p class="title-section-subtitle">exploring the core of web development</p>
         <button class="title-section-button" onclick="makedreamcometrue()">COMBINING KNOWLEDGE WITH ACTION</button>
-        </div>
+        </div> 
       <div class="misc-section" id="aboutme">
         <div class="text-block-container">
             <h1>About Me</h1>
@@ -67,7 +67,8 @@
                <div>Rounds: <span id="craps-stats-rounds"></span></div> 
             </div>
             <div class="craps-on-table-container">
-                <div class="craps-roll-dice-container no-select">Roll Dice<i class="fa-solid fa-dice"></i></div>
+                <div id="craps-roll-dice-button" class="craps-roll-dice-container no-select" onclick="rollDice()">Roll Dice<i class="fa-solid fa-dice"></i></div>
+                <div id="craps-roll-dice-animation-container"></div>
             </div>
             <div class="craps-round-manager">
                     <div class="craps-betting-grid no-select">
@@ -127,7 +128,9 @@ html, body{
 }
 </style>
 <script src="./crapsgame/crapsgame.js"></script>
+<script type="text/javascript" src="https://unpkg.com/roll-a-die@2.0.1/dist/roll-a-die.js"></script>
 <script>
+
     function makedreamcometrue (params) {
      document.body.style.backgroundImage = 'url("https://www.icegif.com/wp-content/uploads/2023/08/icegif-788.gif")'; 
      document.getElementById("title").style.visibility = "hidden"
