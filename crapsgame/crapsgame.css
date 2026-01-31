@@ -11,7 +11,7 @@ margin-top: 100px;
     width: min(600px, 80vw);
     height: min(400px, 53vw);
     border: solid white 2px;
-    margin:100 auto 0 auto;
+    margin: 100px auto 0 auto;
     background-image: url('../images/crapstable.png');
     background-size: cover;
     background-position: center top;
@@ -45,4 +45,12 @@ margin-top: 100px;
 }
 #craps-main-section {
     display: none;
+}
+.craps-main-section-stats {
+    text-align: center;
+    margin-top: 70px;
+}
+.craps-stats-money-container {
+    font-size: 30px;
+    margin: 25px 0 5px 0;
 }
