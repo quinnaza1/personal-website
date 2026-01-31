@@ -1,12 +1,13 @@
 
 <html>
-    <head>
-        <link rel="stylesheet" href="./titlesection/titlesection.css">
-        <link rel="stylesheet" href="./aboutmesection/aboutmesection.css">
-        <link rel="stylesheet" href="./crapsgame/crapsgame.css">   
-        <link rel="stylesheet" href="./crapsgame/utilities.css">   
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Armata&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif+JP:wght@200..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">        </head>
+<head>
+    <link rel="stylesheet" href="./titlesection/titlesection.css">
+    <link rel="stylesheet" href="./aboutmesection/aboutmesection.css">
+    <link rel="stylesheet" href="./crapsgame/crapsgame.css">
+    <link rel="stylesheet" href="./crapsgame/utils.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Armata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
     <body>
         <div class="main-section" id="title"> 
             <h1 class="title-section-header">EHINMOSAN AYOMIDE AYOMIPOSI</h1> 
@@ -67,12 +68,13 @@
                <div>Rounds: <span id="craps-stats-rounds"></span></div> 
             </div>
             <div class="craps-on-table-container">
-                <div id="craps-roll-dice-button" class="craps-roll-dice-container no-select" onclick="rollDice()">Roll Dice<i class="fa-solid fa-dice"></i></div>
+                <div id="craps-roll-dice-button" class="craps-roll-dice-container no-select" onclick="rollDice()">Roll Dice <i class="fas fa-dice"></i></div>
                 <div id="craps-roll-dice-animation-container"></div>
             </div>
-            <div class="craps-round-manager">
-                    <div class="craps-betting-grid no-select">
-                        <div class="craps-bet-button" id="EVEN" onclick="betEven()">
+            <div class="craps-round-manager no-select">
+                    <div id="craps-betting-grid-container">
+                        <div class="craps-betting-grid no-select">
+                            <div class="craps-bet-button" id="EVEN" onclick="betEven()">
                         EVEN 
                         </div>
                         <div class="craps-bet-amount-container">
@@ -85,12 +87,28 @@
                         </div>
                     </div>
             </div>
+        <div id="craps-round-finish-grid-container">
+                        <div class="craps-round-finish-grid no-select">
+                            <div id="craps-next-round-button" class="craps-round-finish-button" onclick="setupNextRound()">
+                                NEXT ROUND
+                            </div>
+                            <div id="craps-next-round-button-disabled" class="craps-round-finish-button">
+                                NEXT ROUND
+                            </div>
+                            <div id="craps-round-finish-message">
+                                YOU WIN!
+                            </div>
+                            <div class="craps-round-finish-button" onclick="exitGame()">
+                                EXIT GAME
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-      </div>
-        </body>
+    </div>
+</body>
 </html>
-
 <style>
     * {
   box-sizing: border-box;
